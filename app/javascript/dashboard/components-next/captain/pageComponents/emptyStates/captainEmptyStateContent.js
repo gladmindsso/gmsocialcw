@@ -65,7 +65,7 @@ export const documentsList = [
       'Comprehensive guide on using conversation filters to manage chats effectively.',
     created_at: 1736143272,
     external_link:
-      'https://www.chatwoot.com/hc/user-guide/articles/1677688192-how-to-use-conversation-filters',
+      '#',
     id: 3059,
     name: 'How to use Conversation Filters? | User Guide | Chatwoot',
     status: 'available',
@@ -77,7 +77,7 @@ export const documentsList = [
       'Step-by-step guide for automating ticket assignments and improving support workflow in Chatwoot.',
     created_at: 1736143273,
     external_link:
-      'https://www.chatwoot.com/hc/user-guide/articles/1677688200-automating-ticket-assignments',
+      '#',
     id: 3060,
     name: 'Automating Ticket Assignments | User Guide | Chatwoot',
     status: 'available',
