@@ -34,7 +34,7 @@
   display_title: 'Brand URL'
   description: 'The URL that would be used in emails under the section “Powered By”'
 - name: WIDGET_BRAND_URL
-  value: 'https://www.chatwoot.com'
+  value: 'https://gladminds.co'
   display_title: 'Widget Brand URL'
   description: 'The URL that would be used in the widget under the section “Powered By”'
 - name: BRAND_NAME
@@ -51,8 +51,8 @@
   description: 'The privacy policy URL displayed in the app'
 - name: DISPLAY_MANIFEST
   value: true
-  display_title: 'Chatwoot Metadata'
-  description: 'Display default Chatwoot metadata like favicons and upgrade warnings'
+  display_title: 'Gladminds Metadata'
+  description: 'Display default Gladminds metadata like favicons and upgrade warnings'
   type: boolean
 # ------- End of Branding Related Config ------- #
 
@@ -164,13 +164,13 @@
 - name: CHATWOOT_INBOX_TOKEN
   value:
   display_title: 'Inbox Token'
-  description: 'The Chatwoot Inbox Token for Contact Support in Cloud'
+  description: 'The gladminds Inbox Token for Contact Support in Cloud'
   locked: false
   type: secret
 - name: CHATWOOT_INBOX_HMAC_KEY
   value:
   display_title: 'Inbox HMAC Key'
-  description: 'The Chatwoot Inbox HMAC Key for Contact Support in Cloud'
+  description: 'The Gladminds Inbox HMAC Key for Contact Support in Cloud'
   locked: false
   type: secret
 - name: CHATWOOT_CLOUD_PLANS
@@ -183,11 +183,11 @@
   description: 'Config to features and their associated plans'
 - name: DEPLOYMENT_ENV
   value: self-hosted
-  description: 'The deployment environment of the installation, to differentiate between Chatwoot cloud and self-hosted'
+  description: 'The deployment environment of the installation, to differentiate between Gladminds cloud and self-hosted'
 - name: ANALYTICS_TOKEN
   value:
   display_title: 'Analytics Token'
-  description: 'The June.so analytics token for Chatwoot cloud'
+  description: 'The June.so analytics token for Gladminds cloud'
   type: secret
 - name: CLEARBIT_API_KEY
   value:
@@ -215,7 +215,7 @@
   description: 'The number of licenses purchased for the installation, retrieved from the billing API'
 - name: CHATWOOT_SUPPORT_WEBSITE_TOKEN
   value:
-  description: 'The Chatwoot website token, used to identify the Chatwoot inbox and display the "Contact Support" option on the billing page'
+  description: 'The Gladminds website token, used to identify the Gladminds inbox and display the "Contact Support" option on the billing page'
   type: secret
 - name: CHATWOOT_SUPPORT_SCRIPT_URL
   value:
@@ -227,7 +227,7 @@
 - name: ACCOUNT_SECURITY_NOTIFICATION_WEBHOOK_URL
   display_title: Webhook URL to post security analysis
   value:
-  description: Used to notify Chatwoot about account abuses, potential threads (Should be a Discord Webhook URL)
+  description: Used to notify gladminds about account abuses, potential threads (Should be a Discord Webhook URL)
 # ------- End of Chatwoot Internal Config for Self Hosted ----#
 
 ## ------ Configs added for enterprise clients ------ ##
