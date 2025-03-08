@@ -84,7 +84,7 @@ class Integrations::OpenaiBaseService
   def make_api_call(body)
     headers = {
       'Content-Type' => 'application/json',
-      'Authorization' => "Bearer #{hook.settings['api_key']}"
+      'Authorization' => "Bearer #{ENV['OPENAI_API_KEY']}"
     }
 
     Rails.logger.info("OpenAI API request: #{body}")
