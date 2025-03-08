@@ -4,8 +4,8 @@ class Integrations::OpenaiBaseService
   # sticking with 120000 to be safe
   # 120000 * 4 = 480,000 characters (rounding off downwards to 400,000 to be safe)
   TOKEN_LIMIT = 400_000
-  API_URL = 'https://api.openai.com/v1/chat/completions'.freeze
-  GPT_MODEL = ENV.fetch('OPENAI_GPT_MODEL', 'gpt-4o-mini').freeze
+  API_URL = 'https://manas-m7zuxzbm-eastus2.cognitiveservices.azure.com/openai/deployments/o3-mini/chat/completions?api-version=2024-12-01-preview'.freeze
+  GPT_MODEL = ENV.fetch('OPENAI_GPT_MODEL', 'o3-mini').freeze
 
   ALLOWED_EVENT_NAMES = %w[rephrase summarize reply_suggestion fix_spelling_grammar shorten expand make_friendly make_formal simplify].freeze
   CACHEABLE_EVENTS = %w[].freeze
