@@ -66,7 +66,7 @@ export default {
       }
     },
     openOpenAIDoc() {
-      window.open('#', '_blank');
+      window.open('https://www.chatwoot.com/blog/v2-17', '_blank');
     },
   },
 };
