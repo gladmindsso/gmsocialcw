@@ -29,7 +29,7 @@ export default {
       try {
         const referrerHost = this.$store.getters['appConfig/getReferrerHost'];
         const baseURL = `${this.globalConfig.widgetBrandURL}?utm_source=${
-          referrerHost ? 'widget_branding' : 'survey_branding'
+          referrerHost ? 'widget_branding' : ''
         }`;
         if (referrerHost) {
           return `${baseURL}&utm_referrer=${referrerHost}`;
