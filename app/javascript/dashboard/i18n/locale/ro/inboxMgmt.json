@@ -735,7 +735,7 @@
         "USER_MESSAGE": "Salut",
         "AGENT_MESSAGE": "Bună"
       },
-      "BRANDING_TEXT": "Oferit de Chatwoot",
+      "BRANDING_TEXT": "Oferit de GladMinds",
       "SCRIPT_SETTINGS": "\nwindow.chatwootSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
