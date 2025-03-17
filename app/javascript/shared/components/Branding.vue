@@ -12,7 +12,7 @@ export default {
   props: {
     disableBranding: {
       type: Boolean,
-      default: true,
+      default: false,
     },
   },
   data() {
