@@ -561,7 +561,7 @@ Woot! Woot!! Chatwoot server installation is complete.
 The server will be accessible at http://$public_ip:3000
 
 To configure a domain and SSL certificate, follow the guide at
-https://gladminds.codocs/deployment/deploy-chatwoot-in-linux-vm?utm_source=cwctl
+https://www.chatwoot.com/docs/deployment/deploy-chatwoot-in-linux-vm?utm_source=cwctl
 
 Join the community at https://chatwoot.com/community?utm_source=cwctl
 ***************************************************************************
