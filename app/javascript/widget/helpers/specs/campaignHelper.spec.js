@@ -13,29 +13,29 @@ describe('#Campaigns Helper', () => {
     it('returns correct value if a valid URL is passed', () => {
       expect(
         isPatternMatchingWithURL(
-          'https://gladminds.co/*',
-          'https://gladminds.co'
+          'https://chatwoot.com/pricing*',
+          'https://chatwoot.com/pricing/'
         )
       ).toBe(true);
 
       expect(
         isPatternMatchingWithURL(
-          'https://*.gladminds.co',
-          'https://gladminds.co'
+          'https://*.chatwoot.com/pricing/',
+          'https://app.chatwoot.com/pricing/'
         )
       ).toBe(true);
 
       expect(
         isPatternMatchingWithURL(
-          'https://{*.}?gladminds/?test=true',
-          'https://gladminds/?test=true'
+          'https://{*.}?chatwoot.com/pricing?test=true',
+          'https://app.chatwoot.com/pricing/?test=true'
         )
       ).toBe(true);
 
       expect(
         isPatternMatchingWithURL(
-          'https://{*.}?gladminds.co/pricing*\\?*',
-          'https://gladminds.co/pricing/?test=true'
+          'https://{*.}?chatwoot.com/pricing*\\?*',
+          'https://chatwoot.com/pricing/?test=true'
         )
       ).toBe(true);
     });
@@ -48,13 +48,13 @@ describe('#Campaigns Helper', () => {
           id: 1,
           timeOnPage: 3,
           triggerOnlyDuringBusinessHours: false,
-          url: '#',
+          url: 'https://www.chatwoot.com/pricing',
         },
         {
           id: 2,
           triggerOnlyDuringBusinessHours: false,
           timeOnPage: 6,
-          url: 'https://www.gladminds.co/contact',
+          url: 'https://www.chatwoot.com/about',
         },
       ]);
     });
@@ -67,23 +67,23 @@ describe('#Campaigns Helper', () => {
             {
               id: 1,
               timeOnPage: 3,
-              url: '#',
+              url: 'https://www.chatwoot.com/pricing',
               triggerOnlyDuringBusinessHours: false,
             },
             {
               id: 2,
               timeOnPage: 6,
-              url: 'https://gladminds.co/contact/',
+              url: 'https://www.chatwoot.com/about',
               triggerOnlyDuringBusinessHours: false,
             },
           ],
-          currentURL: 'https://gladminds.co/contact/',
+          currentURL: 'https://www.chatwoot.com/about/',
         })
       ).toStrictEqual([
         {
           id: 2,
           timeOnPage: 6,
-          url: 'https://gladminds.co/contact',
+          url: 'https://www.chatwoot.com/about',
           triggerOnlyDuringBusinessHours: false,
         },
       ]);
@@ -95,24 +95,24 @@ describe('#Campaigns Helper', () => {
             {
               id: 1,
               timeOnPage: 3,
-              url: '#',
+              url: 'https://www.chatwoot.com/pricing',
               triggerOnlyDuringBusinessHours: false,
             },
             {
               id: 2,
               timeOnPage: 6,
-              url: 'https://gladminds.co/contact',
+              url: 'https://www.chatwoot.com/about',
               triggerOnlyDuringBusinessHours: true,
             },
           ],
-          currentURL: 'https://gladminds.co/contact/',
+          currentURL: 'https://www.chatwoot.com/about/',
           isInBusinessHours: true,
         })
       ).toStrictEqual([
         {
           id: 2,
           timeOnPage: 6,
-          url: 'https://gladminds.co/contact',
+          url: 'https://www.chatwoot.com/about',
           triggerOnlyDuringBusinessHours: true,
         },
       ]);
@@ -124,17 +124,17 @@ describe('#Campaigns Helper', () => {
             {
               id: 1,
               timeOnPage: 3,
-              url: '#',
+              url: 'https://www.chatwoot.com/pricing',
               triggerOnlyDuringBusinessHours: true,
             },
             {
               id: 2,
               timeOnPage: 6,
-              url: 'https://gladminds.co/contact',
+              url: 'https://www.chatwoot.com/about',
               triggerOnlyDuringBusinessHours: true,
             },
           ],
-          currentURL: 'https://gladminds.co/contact/',
+          currentURL: 'https://www.chatwoot.com/about/',
           isInBusinessHours: false,
         })
       ).toStrictEqual([]);

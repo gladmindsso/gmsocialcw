@@ -9,7 +9,7 @@ export default [
     attributeKey: 'linkContact',
     attributeDisplayName: 'URL Input',
     attributeDisplayType: 'link',
-    value: 'https://gladminds.co',
+    value: 'https://www.chatwoot.com',
   },
   {
     attributeKey: 'numberContact',
