@@ -3,7 +3,7 @@
 FactoryBot.define do
   factory :dashboard_app do
     sequence(:title) { |n| "Dashboard App #{n}" }
-    content { [{ type: 'frame', url: 'https://gladminds.co' }] }
+    content { [{ type: 'frame', url: 'https://chatwoot.com' }] }
     user
     account
   end
