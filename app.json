@@ -1,15 +1,11 @@
 {
   "name": "GladMinds",
-  "description": "Chatwoot is a customer support tool for instant messaging channels",
+  "description": "Gladminds tool for instant messaging channels",
   "website": "https://gladminds.co",
-  "repository": "https://github.com/chatwoot/chatwoot",
-  "logo": "https://app.chatwoot.com/brand-assets/logo_thumbnail.svg",
+  "repository": "https://github.com/gladmindsso/gmsocialcw.git",
+  "logo": "https://gladminds.co/wp-content/uploads/2024/02/gladminds-logo2.png",
   "keywords": [
-    "live chat",
-    "customer support",
-    "ruby",
-    "rails",
-    "vue"
+    "onesocial"
   ],
   "success_url": "/",
   "env": {
