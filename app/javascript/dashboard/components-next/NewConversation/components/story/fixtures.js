@@ -15,7 +15,7 @@ export const contacts = [
       },
     },
     availabilityStatus: 'offline',
-    email: 'ozler@chatwoot.com',
+    email: 'ozler@gladminds.co',
     id: 29,
     name: 'Abraham Ozlers',
     phoneNumber: '+246232222222',
@@ -34,9 +34,9 @@ export const contacts = [
 ];
 
 export const activeContact = {
-  email: 'ozler@chatwoot.com',
+  email: 'ozler@gladminds.co',
   id: 29,
-  label: 'Abraham Ozlers (ozler@chatwoot.com)',
+  label: 'Abraham Ozlers (ozler@gladminds.co)',
   name: 'Abraham Ozlers',
   thumbnail: {
     name: 'Abraham Ozlers',
